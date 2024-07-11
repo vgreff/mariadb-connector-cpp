@@ -67,262 +67,262 @@ INCLUDE(SearchLibrary)
 INCLUDE(SetValueMacro)
 
 
-SET (MACPP_SOURCES src/MariaDbDriver.cpp
-                   src/DriverManager.cpp
-                   src/UrlParser.cpp
-                   src/MariaDbDatabaseMetaData.cpp
-                   src/HostAddress.cpp
-                   src/Consts.cpp
-                   src/SQLString.cpp
-                   src/MariaDbConnection.cpp
-                   src/MariaDbStatement.cpp
-                   src/MariaDBException.cpp
-                   src/MariaDBWarning.cpp
-                   src/Identifier.cpp
-                   src/MariaDbSavepoint.cpp
-                   src/SqlStates.cpp
-                   src/Results.cpp
+SET (MACPP_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbDriver.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/DriverManager.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/UrlParser.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbDatabaseMetaData.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/HostAddress.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Consts.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/SQLString.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbConnection.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbStatement.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDBException.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDBWarning.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Identifier.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbSavepoint.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/SqlStates.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Results.cpp
 
-                   src/ColumnType.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/ColumnType.cpp
 
-                   src/ColumnDefinition.cpp
-                   src/protocol/MasterProtocol.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/ColumnDefinition.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol/MasterProtocol.cpp
 
-                   src/protocol/capi/QueryProtocol.cpp
-                   src/protocol/capi/ConnectProtocol.cpp
-                   src/com/capi/ColumnDefinitionCapi.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol/capi/QueryProtocol.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol/capi/ConnectProtocol.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/capi/ColumnDefinitionCapi.cpp
 
-                   src/cache/CallableStatementCache.cpp
-                   src/cache/CallableStatementCacheKey.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/cache/CallableStatementCache.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/cache/CallableStatementCacheKey.cpp
 
-                   src/util/Value.cpp
-                   src/util/Utils.cpp
-                   src/util/String.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/Value.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/Utils.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/String.cpp
 
-                   src/logger/NoLogger.cpp
-                   src/logger/LoggerFactory.cpp
-                   src/logger/ProtocolLoggingProxy.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/logger/NoLogger.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/logger/LoggerFactory.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/logger/ProtocolLoggingProxy.cpp
 
-                   src/parameters/ParameterHolder.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ParameterHolder.cpp
 
-                   src/options/Options.cpp
-                   src/options/DefaultOptions.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/options/Options.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/options/DefaultOptions.cpp
 
-                   src/pool/GlobalStateInfo.cpp
-                   src/pool/Pools.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/pool/GlobalStateInfo.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/pool/Pools.cpp
 
-                   src/failover/FailoverProxy.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/failover/FailoverProxy.cpp
 
-                   src/credential/CredentialPluginLoader.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/credential/CredentialPluginLoader.cpp
 
-                   src/SelectResultSet.cpp
-                   src/com/capi/SelectResultSetCapi.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/SelectResultSet.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/capi/SelectResultSetCapi.cpp
                    #src/com/SelectResultSetPacket.cpp
 
                    #src/com/ColumnDefinitionPacket.cpp
 
-                   src/com/ColumnNameMap.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/ColumnNameMap.cpp
 
-                   src/io/StandardPacketInputStream.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/io/StandardPacketInputStream.cpp
 
-                   src/Charset.cpp
-                   src/ClientSidePreparedStatement.cpp
-                   src/BasePrepareStatement.cpp
-                   src/MariaDbFunctionStatement.cpp
-                   src/MariaDbProcedureStatement.cpp
-                   src/ServerSidePreparedStatement.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Charset.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/ClientSidePreparedStatement.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/BasePrepareStatement.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbFunctionStatement.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbProcedureStatement.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/ServerSidePreparedStatement.cpp
 
-                   src/parameters/BigDecimalParameter.cpp
-                   src/parameters/BooleanParameter.cpp
-                   src/parameters/ByteArrayParameter.cpp
-                   src/parameters/ByteParameter.cpp
-                   src/parameters/DateParameter.cpp
-                   src/parameters/DefaultParameter.cpp
-                   src/parameters/DoubleParameter.cpp
-                   src/parameters/FloatParameter.cpp
-                   src/parameters/IntParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/BigDecimalParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/BooleanParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ByteArrayParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ByteParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/DateParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/DefaultParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/DoubleParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/FloatParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/IntParameter.cpp
                    #src/parameters/LocalTimeParameter.cpp
-                   src/parameters/LongParameter.cpp
-                   src/parameters/ULongParameter.cpp
-                   src/parameters/NullParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/LongParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ULongParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/NullParameter.cpp
                    #src/parameters/OffsetTimeParameter.cpp
-                   src/parameters/ParameterHolder.cpp
-                   src/parameters/ReaderParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ParameterHolder.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ReaderParameter.cpp
                    #src/parameters/SerializableParameter.cpp
-                   src/parameters/ShortParameter.cpp
-                   src/parameters/StreamParameter.cpp
-                   src/parameters/TimeParameter.cpp
-                   src/parameters/TimestampParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ShortParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/StreamParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/TimeParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/TimestampParameter.cpp
                    #src/parameters/ZonedDateTimeParameter.cpp
-                   src/parameters/StringParameter.cpp
-                   src/MariaDbPooledConnection.cpp
-                   src/MariaDbParameterMetaData.cpp
-                   src/MariaDbResultSetMetaData.cpp
-                   src/CallParameter.cpp
-                   src/CallableParameterMetaData.cpp
-                   src/com/Packet.cpp
-                   src/credential/Credential.cpp
-                   src/util/LogQueryTool.cpp
-                   src/util/ClientPrepareResult.cpp
-                   src/util/ServerPrepareResult.cpp
-                   src/util/ServerPrepareStatementCache.cpp
-                   src/com/CmdInformationSingle.cpp
-                   src/com/CmdInformationBatch.cpp
-                   src/com/CmdInformationMultiple.cpp
-                   src/com/RowProtocol.cpp
-                   src/protocol/capi/BinRowProtocolCapi.cpp
-                   src/protocol/capi/TextRowProtocolCapi.cpp
-                   src/ExceptionFactory.cpp
-                   src/StringImp.cpp
-                   src/CArray.cpp
-                   src/SimpleParameterMetaData.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/StringParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbPooledConnection.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbParameterMetaData.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbResultSetMetaData.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/CallParameter.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/CallableParameterMetaData.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/Packet.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/credential/Credential.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/LogQueryTool.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/ClientPrepareResult.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/ServerPrepareResult.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/ServerPrepareStatementCache.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/CmdInformationSingle.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/CmdInformationBatch.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/CmdInformationMultiple.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/RowProtocol.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol/capi/BinRowProtocolCapi.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol/capi/TextRowProtocolCapi.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/ExceptionFactory.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/StringImp.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/CArray.cpp
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/SimpleParameterMetaData.cpp
                    ####CPP####
                    )
 
 IF(WIN32)
   SET(MACPP_SOURCES ${MACPP_SOURCES}
-                   src/Dll.c
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Dll.c
 
-                   src/MariaDBConnCpp.h
-                   src/MariaDbDriver.h
-                   src/UrlParser.h
-                   src/MariaDbDatabaseMetaData.h
-                   src/HostAddress.h
-                   src/Version.h
-                   src/Consts.h
-                   src/MariaDbConnection.h
-                   src/MariaDbStatement.h
-                   src/MariaDBWarning.h
-                   src/Protocol.h
-                   src/Identifier.h
-                   src/MariaDbSavepoint.h
-                   src/SqlStates.h
-                   src/Results.h
-                   src/ColumnDefinition.h
-                   src/MariaDbServerCapabilities.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDBConnCpp.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbDriver.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/UrlParser.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbDatabaseMetaData.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/HostAddress.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Version.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Consts.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbConnection.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbStatement.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDBWarning.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Protocol.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Identifier.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbSavepoint.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/SqlStates.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Results.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/ColumnDefinition.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbServerCapabilities.h
 
-                   src/protocol/MasterProtocol.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol/MasterProtocol.h
 
-                   src/protocol/capi/QueryProtocol.h
-                   src/protocol/capi/ConnectProtocol.h
-                   src/com/capi/ColumnDefinitionCapi.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol/capi/QueryProtocol.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol/capi/ConnectProtocol.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/capi/ColumnDefinitionCapi.h
 
-                   src/cache/CallableStatementCache.h
-                   src/cache/CallableStatementCacheKey.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/cache/CallableStatementCache.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/cache/CallableStatementCacheKey.h
 
-                   src/util/Value.h
-                   src/util/ClassField.h
-                   src/util/Utils.h
-                   src/util/StateChange.h
-                   src/util/String.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/Value.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/ClassField.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/Utils.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/StateChange.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/String.h
 
-                   src/logger/NoLogger.h
-                   src/logger/LoggerFactory.h
-                   src/logger/Logger.h
-                   src/logger/ProtocolLoggingProxy.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/logger/NoLogger.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/logger/LoggerFactory.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/logger/Logger.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/logger/ProtocolLoggingProxy.h
 
-                   src/parameters/ParameterHolder.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ParameterHolder.h
 
-                   src/options/Options.h
-                   src/options/DefaultOptions.h
-                   src/options/DriverPropertyInfo.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/options/Options.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/options/DefaultOptions.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/options/DriverPropertyInfo.h
 
-                   src/io/PacketOutputStream.h
-                   src/io/PacketInputStream.h
-                   src/io/StandardPacketInputStream.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/io/PacketOutputStream.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/io/PacketInputStream.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/io/StandardPacketInputStream.h
 
-                   src/credential/CredentialPlugin.h
-                   src/credential/CredentialPluginLoader.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/credential/CredentialPlugin.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/credential/CredentialPluginLoader.h
 
-                   src/pool/GlobalStateInfo.h
-                   src/pool/Pools.h
-                   src/pool/Pool.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/pool/GlobalStateInfo.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/pool/Pools.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/pool/Pool.h
 
-                   src/failover/FailoverProxy.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/failover/FailoverProxy.h
 
-                   src/Listener.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Listener.h
 
-                   src/com/CmdInformation.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/CmdInformation.h
 
-                   "include/conncpp.hpp"
-                   "include/conncpp/Connection.hpp"
-                   "include/conncpp/Statement.hpp"
-                   "include/conncpp/ResultSet.hpp"
-                   "include/conncpp/PreparedStatement.hpp"
-                   "include/conncpp/ParameterMetaData.hpp"
-                   "include/conncpp/ResultSetMetaData.hpp"
-                   "include/conncpp/DatabaseMetaData.hpp"
-                   "include/conncpp/CallableStatement.hpp"
-                   "include/conncpp/SQLString.hpp"
-                   "include/conncpp/Warning.hpp"
-                   "include/conncpp/Exception.hpp"
-                   "include/conncpp/jdbccompat.hpp"
-                   "include/conncpp/Driver.hpp"
-                   "include/conncpp/DriverManager.hpp"
-                   "include/conncpp/Types.hpp"
-                   "include/conncpp/buildconf.hpp"
-                   "include/conncpp/CArray.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/Connection.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/Statement.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/ResultSet.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/PreparedStatement.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/ParameterMetaData.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/ResultSetMetaData.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/DatabaseMetaData.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/CallableStatement.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/SQLString.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/Warning.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/Exception.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/jdbccompat.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/Driver.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/DriverManager.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/Types.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/buildconf.hpp"
+                   "${CMAKE_CURRENT_SOURCE_DIR}/include/conncpp/CArray.hpp"
 
-                   src/SelectResultSet.h
-                   src/com/capi/SelectResultSetCapi.h
-                   src/com/SelectResultSetPacket.h
-                   src/ColumnType.h
-                   src/com/ColumnDefinitionPacket.h
-                   src/com/ColumnNameMap.h
-                   src/Charset.h
-                   src/ClientSidePreparedStatement.h
-                   src/BasePrepareStatement.h
-                   src/MariaDbFunctionStatement.h
-                   src/MariaDbProcedureStatement.h
-                   src/ServerSidePreparedStatement.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/SelectResultSet.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/capi/SelectResultSetCapi.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/SelectResultSetPacket.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/ColumnType.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/ColumnDefinitionPacket.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/ColumnNameMap.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Charset.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/ClientSidePreparedStatement.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/BasePrepareStatement.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbFunctionStatement.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbProcedureStatement.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/ServerSidePreparedStatement.h
 
-                   src/parameters/BigDecimalParameter.h
-                   src/parameters/BooleanParameter.h
-                   src/parameters/ByteArrayParameter.h
-                   src/parameters/ByteParameter.h
-                   src/parameters/DateParameter.h
-                   src/parameters/DefaultParameter.h
-                   src/parameters/DoubleParameter.h
-                   src/parameters/FloatParameter.h
-                   src/parameters/IntParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/BigDecimalParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/BooleanParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ByteArrayParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ByteParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/DateParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/DefaultParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/DoubleParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/FloatParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/IntParameter.h
                    #src/parameters/LocalTimeParameter.h
-                   src/parameters/LongParameter.h
-                   src/parameters/ULongParameter.h
-                   src/parameters/NullParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/LongParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ULongParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/NullParameter.h
                    #src/parameters/OffsetTimeParameter.h
-                   src/parameters/ReaderParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ReaderParameter.h
                    #src/parameters/SerializableParameter.h
-                   src/parameters/ShortParameter.h
-                   src/parameters/StreamParameter.h
-                   src/parameters/TimeParameter.h
-                   src/parameters/TimestampParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/ShortParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/StreamParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/TimeParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/TimestampParameter.h
                    #src/parameters/ZonedDateTimeParameter.h
-                   src/parameters/StringParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/parameters/StringParameter.h
 
-                   src/Parameters.h
-                   src/MariaDbPooledConnection.h
-                   src/MariaDbParameterMetaData.h
-                   src/CallParameter.h
-                   src/CallableParameterMetaData.h
-                   src/MariaDbResultSetMetaData.h
-                   src/com/Packet.h
-                   src/util/ServerStatus.h
-                   src/credential/Credential.h
-                   src/util/LogQueryTool.h
-                   src/PrepareResult.h
-                   src/util/ClientPrepareResult.h
-                   src/util/ServerPrepareResult.h
-                   src/util/ServerPrepareStatementCache.h
-                   src/com/CmdInformationSingle.h
-                   src/com/CmdInformationBatch.h
-                   src/com/CmdInformationMultiple.h
-                   src/com/RowProtocol.h
-                   src/protocol/capi/BinRowProtocolCapi.h
-                   src/protocol/capi/TextRowProtocolCapi.h
-                   src/ExceptionFactory.h
-                   src/StringImp.h
-                   src/CArrayImp.h
-                   src/SimpleParameterMetaData.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/Parameters.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbPooledConnection.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbParameterMetaData.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/CallParameter.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/CallableParameterMetaData.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/MariaDbResultSetMetaData.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/Packet.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/ServerStatus.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/credential/Credential.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/LogQueryTool.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/PrepareResult.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/ClientPrepareResult.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/ServerPrepareResult.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/util/ServerPrepareStatementCache.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/CmdInformationSingle.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/CmdInformationBatch.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/CmdInformationMultiple.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/com/RowProtocol.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol/capi/BinRowProtocolCapi.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/protocol/capi/TextRowProtocolCapi.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/ExceptionFactory.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/StringImp.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/CArrayImp.h
+                   ${CMAKE_CURRENT_SOURCE_DIR}/src/SimpleParameterMetaData.h
                    ####H####
                        )
   SOURCE_GROUP(Logging REGULAR_EXPRESSION "/logger/")

@@ -72,3 +72,4 @@ benchmark/main-benchmark
 *.exe
 *.out
 *.app
+build/
